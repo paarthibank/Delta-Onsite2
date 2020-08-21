@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div>
+		<%for(i=0;i<n1;i++){%>
+		<form method="post" action="/disp" style="float: left;">
+		<img src="pic<%=i%>.jpg">
+		<input type="hidden" name="pic" value="<%=i%>">
+		<button type="submit">Click here to view original</button>
+		</form>
+		<%}%>
+	</div>
+</body>
